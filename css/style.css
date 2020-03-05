@@ -1,7 +1,7 @@
 /* title */
 h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
 }
 /* table */
 .table {
@@ -10,16 +10,16 @@ h1 {
   margin: 0 auto;
 }
 table {
-  border-spacing: 5px;
+  border-spacing: 2px;
 }
 tr,
 td {
   border: 1px solid black;
-  border-radius: 20%;
+  border-radius: 15%;
 }
 div td {
-  width: 50px;
-  height: 30px;
+  width: 70px;
+  height: 70px;
 }
 /* empty data */
 .o {
@@ -35,7 +35,7 @@ tr:nth-child(7) {
 /* blue light */
 tr:nth-child(8),
 tr:nth-child(6) :nth-child(3) {
-  background-color: aquamarine;
+  background-color: rgb(127, 255, 212);
 }
 /* blue dark */
 tr:nth-child(9),
@@ -48,7 +48,7 @@ tr:nth-child(7) :first-child,
 tr:nth-child(8) :first-child,
 tr:nth-child(7) :nth-child(17),
 tr:nth-child(7) :nth-child(3) {
-  background-color: blue;
+  background-color: rgba(65, 105, 225, 0.87);
 }
 /* yellow */
 tr:nth-child(1) :first-child,
@@ -58,7 +58,7 @@ tr:nth-child(2) :nth-child(16),
 tr:nth-child(3) :nth-child(15),
 tr:nth-child(3) :nth-child(16),
 tr:nth-child(4) :nth-child(16) {
-  background-color: yellow;
+  background-color: rgba(255, 255, 0, 0.973);
 }
 /* violet */
 tr:nth-child(1) :last-child,
@@ -87,7 +87,7 @@ tr:nth-child(4) :nth-child(17),
 tr:nth-child(5) :nth-child(17),
 tr:nth-child(6) :nth-child(17),
 tr:nth-child(7) :nth-child(15) {
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.753);
 }
 /* pink */
 tr:nth-child(3) :nth-child(13),
