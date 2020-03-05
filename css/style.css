@@ -48,7 +48,7 @@ tr:nth-child(7) :first-child,
 tr:nth-child(8) :first-child,
 tr:nth-child(7) :nth-child(17),
 tr:nth-child(7) :nth-child(3) {
-  background-color: rgba(65, 105, 225, 0.87);
+  background-color: rgba(65, 105, 225, 0.959);
 }
 /* yellow */
 tr:nth-child(1) :first-child,
