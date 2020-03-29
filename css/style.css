@@ -1,41 +1,50 @@
+:root {
+  font-size: 16px;
+  overflow: hidden;
+  font-family: "Taviraj", serif;
+}
 /* title */
 h1 {
   text-align: center;
-  font-size: 40px;
+  font-size: 4rem;
 }
 /* table */
 .table {
+  margin: 0 auto;
   text-align: center;
   width: fit-content;
-  margin: 0 auto;
 }
 table {
   border-spacing: 2px;
 }
 tr,
 td {
-  border: 1px solid black;
+  border: 2px solid #111;
   border-radius: 15%;
 }
 div td {
-  width: 70px;
-  height: 70px;
+  width: 4rem;
+  height: 4rem;
+  transition: all 0.4s ease;
 }
 /* empty data */
 .o {
   border: none;
+}
+.o:hover {
+  cursor: auto;
 }
 /* green */
 tr:nth-child(4),
 tr:nth-child(5),
 tr:nth-child(6),
 tr:nth-child(7) {
-  background-color: green;
+  background-color: yellowgreen;
 }
 /* blue light */
 tr:nth-child(8),
 tr:nth-child(6) :nth-child(3) {
-  background-color: rgb(127, 255, 212);
+  background-color: lightblue;
 }
 /* blue dark */
 tr:nth-child(9),
@@ -48,7 +57,7 @@ tr:nth-child(7) :first-child,
 tr:nth-child(8) :first-child,
 tr:nth-child(7) :nth-child(17),
 tr:nth-child(7) :nth-child(3) {
-  background-color: rgba(65, 105, 225, 0.959);
+  background-color: steelblue;
 }
 /* yellow */
 tr:nth-child(1) :first-child,
@@ -58,7 +67,7 @@ tr:nth-child(2) :nth-child(16),
 tr:nth-child(3) :nth-child(15),
 tr:nth-child(3) :nth-child(16),
 tr:nth-child(4) :nth-child(16) {
-  background-color: rgba(255, 255, 0, 0.973);
+  background-color: yellow;
 }
 /* violet */
 tr:nth-child(1) :last-child,
@@ -68,7 +77,7 @@ tr:nth-child(4) :last-child,
 tr:nth-child(5) :last-child,
 tr:nth-child(6) :last-child,
 tr:nth-child(7) :nth-child(16) {
-  background-color: violet;
+  background-color: palevioletred;
 }
 /* brown */
 tr:nth-child(2) :nth-child(2),
@@ -78,7 +87,7 @@ tr:nth-child(5) :nth-child(2),
 tr:nth-child(6) :nth-child(2),
 tr:nth-child(7) :nth-child(2),
 tr:nth-child(7) :nth-child(18) {
-  background-color: burlywood;
+  background-color: peru;
 }
 /* red */
 tr:nth-child(2) :nth-child(17),
@@ -87,7 +96,7 @@ tr:nth-child(4) :nth-child(17),
 tr:nth-child(5) :nth-child(17),
 tr:nth-child(6) :nth-child(17),
 tr:nth-child(7) :nth-child(15) {
-  background-color: rgba(255, 0, 0, 0.753);
+  background-color: red;
 }
 /* pink */
 tr:nth-child(3) :nth-child(13),
@@ -99,7 +108,7 @@ tr:nth-child(6) :nth-child(14),
 tr:nth-child(6) :nth-child(15),
 tr:nth-child(7) :nth-child(13),
 tr:nth-child(7) :nth-child(14) {
-  background-color: rgb(255, 192, 203);
+  background-color: pink;
 }
 /* other pink */
 tr:nth-child(2) :nth-child(13),
@@ -109,7 +118,7 @@ tr:nth-child(4) :nth-child(15),
 tr:nth-child(5) :nth-child(15),
 tr:nth-child(5) :nth-child(16),
 tr:nth-child(6) :nth-child(16) {
-  background-color: purple;
+  background-color: mediumpurple;
 }
 /* white */
 tr:nth-child(8) :first-child,
@@ -122,4 +131,46 @@ tr:nth-child(9) :nth-child(17),
 tr:nth-child(9) :nth-child(18) {
   background-color: white;
   border: none;
+}
+div td:hover {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+  cursor: pointer;
+  text-shadow: 2px 1px 2px black;
+}
+@media (max-width: 1300px) {
+  div td {
+    width: 3rem;
+    height: 3rem;
+  }
+  div td:hover {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px black;
+  }
+}
+@media (max-width: 1050px) {
+  div td {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.9rem;
+  }
+  div td:hover {
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px black;
+  }
+}
+@media (max-width: 800px) {
+  div td {
+    width: 1.3rem;
+    height: 1.3rem;
+    font-size: 0.5rem;
+  }
+  div td:hover {
+    cursor: pointer;
+  }
 }
