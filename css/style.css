@@ -1,52 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 :root {
   font-size: 16px;
   overflow: hidden;
   font-family: "Taviraj", serif;
 }
-/* title */
+
+body {
+  background-image: radial-gradient(
+    circle,
+    #f4f7c5,
+    #ddeec3,
+    #c8e4c2,
+    #b7d9c1,
+    #aacdbe
+  );
+}
+
+/* ===== Title === */
+
 h1 {
   text-align: center;
+  font-weight: 300;
   font-size: 4rem;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.6);
 }
-/* table */
+
+/* ===== Table === */
+
 .table {
   margin: 0 auto;
   text-align: center;
   width: fit-content;
+  background: white;
 }
+
 table {
   border-spacing: 2px;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.7);
 }
+
 tr,
 td {
   border: 2px solid #111;
   border-radius: 15%;
 }
+
 div td {
   width: 4rem;
   height: 4rem;
   transition: all 0.4s ease;
 }
-/* empty data */
-.o {
-  border: none;
-}
-.o:hover {
-  cursor: auto;
-}
-/* green */
+
+/* ===== Green === */
+
 tr:nth-child(4),
 tr:nth-child(5),
 tr:nth-child(6),
 tr:nth-child(7) {
   background-color: yellowgreen;
 }
-/* blue light */
+
+/* ===== Blue light === */
+
 tr:nth-child(8),
 tr:nth-child(6) :nth-child(3) {
   background-color: lightblue;
 }
-/* blue dark */
+
+/* ===== Blue dark === */
+
 tr:nth-child(9),
 tr:nth-child(2) :first-child,
 tr:nth-child(3) :first-child,
@@ -59,7 +86,9 @@ tr:nth-child(7) :nth-child(17),
 tr:nth-child(7) :nth-child(3) {
   background-color: steelblue;
 }
-/* yellow */
+
+/* ===== Yellow === */
+
 tr:nth-child(1) :first-child,
 tr:nth-child(2) :nth-child(14),
 tr:nth-child(2) :nth-child(15),
@@ -69,7 +98,9 @@ tr:nth-child(3) :nth-child(16),
 tr:nth-child(4) :nth-child(16) {
   background-color: yellow;
 }
-/* violet */
+
+/* ===== Violet === */
+
 tr:nth-child(1) :last-child,
 tr:nth-child(2) :last-child,
 tr:nth-child(3) :last-child,
@@ -79,7 +110,9 @@ tr:nth-child(6) :last-child,
 tr:nth-child(7) :nth-child(16) {
   background-color: palevioletred;
 }
-/* brown */
+
+/* ===== Brown === */
+
 tr:nth-child(2) :nth-child(2),
 tr:nth-child(3) :nth-child(2),
 tr:nth-child(4) :nth-child(2),
@@ -89,7 +122,9 @@ tr:nth-child(7) :nth-child(2),
 tr:nth-child(7) :nth-child(18) {
   background-color: peru;
 }
-/* red */
+
+/* ===== Red === */
+
 tr:nth-child(2) :nth-child(17),
 tr:nth-child(3) :nth-child(17),
 tr:nth-child(4) :nth-child(17),
@@ -98,7 +133,9 @@ tr:nth-child(6) :nth-child(17),
 tr:nth-child(7) :nth-child(15) {
   background-color: red;
 }
-/* pink */
+
+/* ===== Pink === */
+
 tr:nth-child(3) :nth-child(13),
 tr:nth-child(4) :nth-child(13),
 tr:nth-child(5) :nth-child(13),
@@ -110,7 +147,9 @@ tr:nth-child(7) :nth-child(13),
 tr:nth-child(7) :nth-child(14) {
   background-color: pink;
 }
-/* other pink */
+
+/* ===== Purple === */
+
 tr:nth-child(2) :nth-child(13),
 tr:nth-child(3) :nth-child(14),
 tr:nth-child(4) :nth-child(14),
@@ -120,7 +159,9 @@ tr:nth-child(5) :nth-child(16),
 tr:nth-child(6) :nth-child(16) {
   background-color: mediumpurple;
 }
-/* white */
+
+/* ===== White === */
+
 tr:nth-child(8) :first-child,
 tr:nth-child(9) :first-child,
 tr:nth-child(8) :nth-child(16),
@@ -132,45 +173,68 @@ tr:nth-child(9) :nth-child(18) {
   background-color: white;
   border: none;
 }
-div td:hover {
-  font-size: 2rem;
-  letter-spacing: 1px;
-  font-weight: 400;
-  cursor: pointer;
-  text-shadow: 2px 1px 2px black;
+
+/* ===== Empty === */
+
+.o {
+  border: none;
 }
+
+.o:hover {
+  cursor: auto;
+}
+
+/* ===== Hover === */
+
+div td:hover {
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-shadow: 2px 2px 3px black;
+}
+
+/* ===== Responsive === */
+
 @media (max-width: 1300px) {
   div td {
     width: 3rem;
     height: 3rem;
   }
+
   div td:hover {
-    font-size: 1.4rem;
-    letter-spacing: 1px;
-    cursor: pointer;
+    font-size: 1.2rem;
     text-shadow: 1px 1px 1px black;
   }
 }
+
 @media (max-width: 1050px) {
+  h1 {
+    margin-bottom: 10rem;
+  }
+
   div td {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     font-size: 0.9rem;
   }
+
   div td:hover {
     font-size: 1rem;
-    font-weight: 400;
-    cursor: pointer;
-    text-shadow: 1px 1px 1px black;
   }
 }
-@media (max-width: 800px) {
+
+@media (max-width: 740px) {
+  h1 {
+    font-size: 2rem;
+  }
+
   div td {
-    width: 1.3rem;
-    height: 1.3rem;
+    width: 1.2rem;
+    height: 1.2rem;
     font-size: 0.5rem;
   }
+
   div td:hover {
-    cursor: pointer;
+    font-size: 0.5rem;
+    text-shadow: 0 0 0 black;
   }
 }
